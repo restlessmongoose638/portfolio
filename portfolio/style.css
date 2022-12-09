@@ -1,0 +1,189 @@
+
+@font-face {
+    font-family: logofont1;
+    src: url(/public/images/OldNewspaperTypes.ttf);
+}
+
+@font-face {
+    font-family: logofont2;
+    src: url(/public/images/DS-DIGI.TTF);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  border-radius:10px;
+  padding: 20px 20px;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .navbar #title h3{
+    font-family: logofont1; 
+    font-size: 20px;
+    color: black;
+}
+
+nav .navbar #navigation{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    color: black;
+  }
+
+nav .navbar li{
+    list-style: none;
+    margin: 10px;
+  }
+
+nav .navbar{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+nav.sticky .navbar{
+  background:black;
+  opacity: 0.5;
+}
+
+nav.sticky #title h3{
+    font-family: logofont2;
+    font-size: 20px;
+    color:greenyellow; 
+}
+
+nav.sticky #navigation li{
+    font-size: 16px;
+    color:greenyellow; 
+}
+
+.about {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px; 
+}
+
+.about .left{
+  width: 45%;
+}
+.about .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  
+}
+.about .right{
+  width: 45%;
+}
+
+.about .right p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+  color: black;
+  font-size: 14px;
+}
+
+.projects {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.projects .projects-title{
+    display: flex;
+    justify-content: right;
+    font-family: logofont1;
+    text-align: center;
+    padding: 40px;
+}
+.projects .cards{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.projects .cards #button button{
+    border: 2px solid #bdb8b9; 
+    background-color: white;
+    margin: 20px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .projects .info #text{  
+    border: 2px solid #bdb8b9; 
+    background-color: white;
+    margin: 20px;
+    width: 400px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+.projects .cards #button button:hover{
+  background:#bdb8b9;
+  border: 2px solid black; 
+  color: #fff;
+}
+
+.contact {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 20px; 
+}
+
+.contact .text{
+    /* align-items: right; */
+    /* border-radius: 10px;  */
+    /* width: 470px; */
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.contact .title {
+    font-family: logofont1;
+    color: black;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.contact .text{
+    color: black;
+    width: 80%;
+    text-align: right;
+    margin: auto;
+}
+
+
